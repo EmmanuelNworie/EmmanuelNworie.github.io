@@ -1,126 +1,137 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects | Emmanuel Nworie</title>
-  <meta name="description" content="Projects by Emmanuel Nworie — scientific computing, PDEs, FEM workflows, ML/data."/>
-  <link rel="stylesheet" href="assets/style.css"/>
+  <meta name="description" content="Selected projects by Emmanuel Nworie in scientific computing, numerical modeling, data analysis, and machine learning." />
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
-  <div class="container">
-    <div class="nav">
-      <div class="brand">
-        <div class="name">Emmanuel Nworie</div>
-        <div class="tag">Scientific Computing • Numerical PDEs • ML/Data</div>
-      </div>
-      <div class="menu">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">Emmanuel Nworie</a>
+      <nav class="nav">
         <a href="index.html">Home</a>
-        <a class="active" href="projects.html">Projects</a>
-        <a href="cv.html">CV</a>
+        <a href="projects.html" aria-current="page">Projects</a>
         <a href="contact.html">Contact</a>
-      </div>
+      </nav>
     </div>
+  </header>
 
-    <section class="hero">
-      <h1 class="h1">Projects</h1>
-      <p class="sub">
-        A curated selection of projects showing end-to-end execution: clean repos, reproducible runs, and results-quality plots.
-        Replace the placeholder links below with your real repositories as you polish them.
-      </p>
-      <div class="btnrow">
-        <a class="btn primary" href="https://github.com/EmmanuelNworie?tab=repositories" target="_blank" rel="noreferrer">All Repositories</a>
+  <main class="page-main">
+    <section class="page-hero">
+      <div class="container narrow">
+        <p class="eyebrow">Project Portfolio</p>
+        <h1>Research, modeling, and applied data work.</h1>
+        <p class="lead">
+          My project portfolio emphasizes reproducibility, mathematical clarity, readable code,
+          and results that are communicated well.
+        </p>
       </div>
     </section>
 
-    <section class="grid">
-      <!-- ========== Scientific Computing / Modeling ========== -->
-      <div class="card">
-        <h2 class="h2">🔬 Scientific Computing / Modeling</h2>
-        <p class="small">Numerical modeling, flux/transport, simulation workflows, parameter studies.</p>
-      </div>
+    <section class="section">
+      <div class="container narrow stack-gap">
+        <article class="card project-detail">
+          <div class="project-header">
+            <div>
+              <p class="project-type">Research / Scientific Computing</p>
+              <h2>Diffusion-Limited Lipid Droplet Growth</h2>
+            </div>
+            <a class="text-link" href="https://github.com/EmmanuelNworie/diffusion-limited-droplet-growth" target="_blank" rel="noreferrer">Repository ↗</a>
+          </div>
+          <p>
+            This project studies diffusion-limited growth of lipid droplets using mathematical modeling,
+            finite element style workflows, and numerical simulation. It focuses on transport, absorbing
+            boundaries, flux computation, and the relationship between asymptotic reasoning and computational output.
+          </p>
+          <div class="tag-list compact">
+            <span>Python</span>
+            <span>Numerical PDEs</span>
+            <span>Scientific Computing</span>
+            <span>FEM Workflows</span>
+            <span>Visualization</span>
+          </div>
+        </article>
 
-      <div class="card half">
-        <h2 class="h2">Diffusion-Limited Droplet Growth (FEM workflow)</h2>
-        <p class="small">
-          Finite-element style simulation of diffusion-limited growth with absorbing boundaries and boundary flux computation.
-          Includes plots, parameter sweeps, and scaling checks.
-        </p>
-        <div class="kv">
-          <span>Python</span><span>NumPy/SciPy</span><span>FEM workflows</span><span>Flux computation</span><span>Visualization</span>
-        </div>
-        <div class="btnrow">
-          <!-- Replace with your real repo link -->
-          <a class="btn primary" href="https://github.com/EmmanuelNworie" target="_blank" rel="noreferrer">Repo</a>
-          <a class="btn" href="#" onclick="return false;">Paper/Notes (optional)</a>
-        </div>
-      </div>
+        <article class="card project-detail">
+          <div class="project-header">
+            <div>
+              <p class="project-type">Research / Data Analysis</p>
+              <h2>Experimental Droplet Tracking Analysis Pipeline</h2>
+            </div>
+            <a class="text-link" href="https://github.com/EmmanuelNworie" target="_blank" rel="noreferrer">Profile Repositories ↗</a>
+          </div>
+          <p>
+            End-to-end analysis of experimental tracking data, including cleaning, age alignment,
+            mean-curve construction, model fitting, parameter extraction, and publication-ready plots.
+            The goal is to connect observed droplet behavior to interpretable mathematical models.
+          </p>
+          <div class="tag-list compact">
+            <span>pandas</span>
+            <span>Optimization</span>
+            <span>Model Fitting</span>
+            <span>Data Visualization</span>
+            <span>Reproducibility</span>
+          </div>
+        </article>
 
-      <div class="card half">
-        <h2 class="h2">Experimental Droplet Tracking Analysis Pipeline</h2>
-        <p class="small">
-          End-to-end data pipeline: parsing CSV tracks, alignment, summary statistics, model fitting, and report-ready figures.
-        </p>
-        <div class="kv">
-          <span>pandas</span><span>Optimization</span><span>ODE fitting</span><span>Reproducible plots</span>
-        </div>
-        <div class="btnrow">
-          <!-- Replace with your real repo link -->
-          <a class="btn primary" href="https://github.com/EmmanuelNworie" target="_blank" rel="noreferrer">Repo</a>
-          <a class="btn" href="#" onclick="return false;">Demo Notebook (optional)</a>
-        </div>
-      </div>
+        <article class="card project-detail">
+          <div class="project-header">
+            <div>
+              <p class="project-type">Machine Learning / Data Science</p>
+              <h2>Machine Learning for Predictive Modeling</h2>
+            </div>
+            <a class="text-link" href="https://github.com/EmmanuelNworie/ML" target="_blank" rel="noreferrer">Repository ↗</a>
+          </div>
+          <p>
+            A collection of machine learning work focused on preprocessing, feature selection,
+            baseline modeling, evaluation, and clear presentation of results. These projects reflect
+            practical data workflows as well as an emphasis on model interpretation.
+          </p>
+          <div class="tag-list compact">
+            <span>R</span>
+            <span>Python</span>
+            <span>Classification</span>
+            <span>Evaluation</span>
+            <span>EDA</span>
+          </div>
+        </article>
 
-      <!-- ========== ML / Data Science ========== -->
-      <div class="card">
-        <h2 class="h2">📊 Machine Learning / Data Science</h2>
-        <p class="small">Clean EDA, feature engineering, baseline models, evaluation, and clear reporting.</p>
-      </div>
-
-      <div class="card half">
-        <h2 class="h2">Intel Image Classification</h2>
-        <p class="small">
-          Multi-class scene classification pipeline with preprocessing + exploratory analysis + baseline models.
-          Includes notebook report and clear evaluation.
-        </p>
-        <div class="kv">
-          <span>Python</span><span>Jupyter</span><span>Classification</span><span>Evaluation</span>
-        </div>
-        <div class="btnrow">
-          <a class="btn primary" href="https://github.com/EmmanuelNworie" target="_blank" rel="noreferrer">Repo</a>
-          <a class="btn" href="#" onclick="return false;">Report (HTML)</a>
-        </div>
-      </div>
-
-      <div class="card half">
-        <h2 class="h2">Customer Churn Modeling</h2>
-        <p class="small">
-          EDA → preprocessing → baseline models → metrics and interpretation. Designed as a recruiter-friendly “end-to-end” repo.
-        </p>
-        <div class="kv">
-          <span>pandas</span><span>scikit-learn</span><span>Metrics</span><span>Feature engineering</span>
-        </div>
-        <div class="btnrow">
-          <a class="btn primary" href="https://github.com/EmmanuelNworie" target="_blank" rel="noreferrer">Repo</a>
-          <a class="btn" href="#" onclick="return false;">Model Card</a>
-        </div>
-      </div>
-
-      <!-- ========== Tooling / Utilities ========== -->
-      <div class="card">
-        <h2 class="h2">🧰 Tools / Utilities</h2>
-        <p class="small">Small but polished utilities that signal engineering maturity.</p>
-        <ul class="list">
-          <li>Reusable plotting helpers</li>
-          <li>CLI data cleaning scripts</li>
-          <li>Templates for reproducible notebooks and reports</li>
-        </ul>
+        <article class="card project-detail">
+          <div class="project-header">
+            <div>
+              <p class="project-type">Professional Signal</p>
+              <h2>How I Build Public Repositories</h2>
+            </div>
+          </div>
+          <p>
+            I aim for repositories that are easy to understand and easy to run. That means a clear README,
+            organized files, dependency information, comments where they matter, and plots or outputs that tell
+            the story of the project without unnecessary clutter.
+          </p>
+          <ul class="bullet-list">
+            <li>Clear problem statement and motivation</li>
+            <li>Reproducible instructions</li>
+            <li>Clean notebooks or scripts</li>
+            <li>Interpretable figures and outputs</li>
+            <li>Technical writing that is concise and useful</li>
+          </ul>
+        </article>
       </div>
     </section>
+  </main>
 
-    <div class="footer">
-      Tip: keep 4–8 “portfolio repos” public and polished; archive the rest.
+  <footer class="site-footer">
+    <div class="container footer-wrap">
+      <p>© 2026 Emmanuel Nworie</p>
+      <div class="footer-links">
+        <a href="https://github.com/EmmanuelNworie" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/nworie-emmanuel-chinweuba" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="mailto:enworie@smu.edu">Email</a>
+      </div>
     </div>
-  </div>
+  </footer>
 </body>
 </html>
